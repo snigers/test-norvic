@@ -1,5 +1,5 @@
 <?php
-namespace Eskov;
+namespace Eskov\Test;
 
 use Bitrix\Main\Entity;
 use Bitrix\Main\Localization\Loc;

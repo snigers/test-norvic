@@ -1,7 +1,7 @@
 <?php
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
 
-use Eskov\Test;
+use Eskov\DataHelper;
 CModule::IncludeModule("eskov.test");
 
 class CEscovList extends CBitrixComponent
