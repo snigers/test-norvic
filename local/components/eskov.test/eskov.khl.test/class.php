@@ -23,7 +23,12 @@ class CEscovList extends CBitrixComponent
 				$arrayFields[] = $value;
 			}
 			
-			$csvFile->SaveFile($file,$arrayFields);
+			try {
+				$csvFile->SaveFile($file,$arrayFields);
+			} catch (Exception $e) {
+				pr("Failed to write to file!");
+				pr($e);
+			}
 		}
 		
 		foreach ($array as $arValue){
@@ -34,7 +39,12 @@ class CEscovList extends CBitrixComponent
 				$row[] = $arrayVal;
 			}
 			
-			$csvFile->SaveFile($file,$row);
+			try {
+				$csvFile->SaveFile($file,$row);
+			} catch (Exception $e) {
+				pr("Failed to write to file!");
+				pr($e);
+			}
 		}
 	}
 	
